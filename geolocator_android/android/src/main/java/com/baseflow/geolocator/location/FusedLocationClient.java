@@ -30,6 +30,7 @@ import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.location.Priority;
 import com.google.android.gms.location.SettingsClient;
 import com.google.android.gms.tasks.RuntimeExecutionException;
+import com.google.android.gms.tasks.OnFailureListener;
 
 import java.security.SecureRandom;
 
