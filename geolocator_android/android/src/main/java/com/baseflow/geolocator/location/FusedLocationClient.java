@@ -183,8 +183,8 @@ class FusedLocationClient implements LocationClient {
                   listener.onLocationServiceError(ErrorCodes.locationServicesDisabled);
                 }
               } catch (RuntimeExecutionException ree) {
-                errorCallback.onError(ErrorCodes.locationServicesFailed);
-              } 
+                listener.onLocationServiceError(ErrorCodes.locationServicesFailed);
+              }
             })
         .addOnFailureListener(
             new OnFailureListener() {
